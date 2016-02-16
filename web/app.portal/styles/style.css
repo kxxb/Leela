@@ -1,0 +1,82 @@
+﻿html {margin:0;padding:0;width:100%;height:100%;font-size:11px;}
+body {
+	background-color:#ffffff;
+    color: #000000;
+	font-size:13px;
+	font-family:Tahoma;
+    margin:0;
+	padding:0;
+}
+a:link {
+	color: #0066cc;
+	text-decoration:underline;
+	font-weight:bold;
+}
+a:visited {
+	color: #0066cc;
+	text-decoration:underline;
+	font-weight:bold;
+}
+a:hover {
+	color: #5cadfe;
+	text-decoration:underline;
+	font-weight:bold;
+}
+a:active {
+	color: #0066cc;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.main {
+background-color:#ffffff;
+background-image: url(../images/sky.jpg);
+background-repeat:no-repeat;
+background-position:left top;
+
+height:100%;
+}
+
+.center {
+width:850px;
+padding-top:100px;
+}
+
+.logo {
+width:235px;
+height:110px;
+background-image:url(../images/logo.gif);
+background-repeat:no-repeat;
+}
+.help_img{
+width:303px;
+height:464px;
+background-image:url(../images/help.gif);
+background-repeat:no-repeat;
+background-position:left top;
+}
+.welcom{
+font-family:Georgia;
+font-size:20px;
+font-style:italic;
+color:#b74734;
+}
+.inform{
+font-size:13px;
+font-family:Tahoma;
+line-height:16px;
+}
+.attension{
+color:#db6666;
+}
+
+p { 
+text-indent: 15px;
+}
+
+.spacer 
+{
+  border:0px;
+  border-collapse:collapse;
+  height:15px;
+}

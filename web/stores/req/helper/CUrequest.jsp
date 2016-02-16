@@ -1,0 +1,54 @@
+<%@ page import="java.sql.Types,  java.sql.*"
+         contentType="text/html;charset=utf-8"  %>
+<jsp:useBean id="db_conn" class="Leela.db.Conn" scope="session" />
+<jsp:useBean id="Lela_core" class="Leela.core.user_managment" scope="session" />
+<%
+        String v_result ="";
+        Connection conn = null;
+        CallableStatement stmt = null;
+    try {
+        conn = db_conn.GetConnect();
+        //int g_user_id = Lela_core.get_users_by_ip(conn, request.getRemoteAddr());
+        
+        
+        
+         request.setCharacterEncoding("utf-8");
+         stmt =  conn.prepareCall(
+            "Begin ? := tl_ExtCoreRq.CURequest(?,?,?,?,?,?,?,?,?,?); End;"
+          );
+
+          stmt.registerOutParameter(1, Types.INTEGER);  // o_Result
+          stmt.setString(2, request.getParameter("reqid"));
+          //stmt.setString("responsibly", request.getParameter("responsibly"));
+          stmt.setString(3, request.getParameter("responsibly_id"));
+          stmt.setString(4, request.getParameter("dt_execute"));
+          ///stmt.setString("status", request.getParameter("status"));
+          stmt.setString(5, request.getParameter("Status_Name"));
+          stmt.setString(6, request.getParameter("contract_number"));
+          stmt.setString(7, request.getParameter("contract_date"));
+          stmt.setString(8, request.getParameter("contacrt_return_date"));
+          stmt.setString(9, request.getParameter("Contragent"));
+          stmt.setString(10, request.getParameter("request_control"));
+          stmt.setString(11, request.getParameter("user_id"));
+
+          stmt.execute();
+          int res = stmt.getInt(1);
+
+         //out.println("<xml version='1.0' encoding='utf-8'>"); windows-1251
+         out.println(res);
+         } catch (Exception e) {
+                out.println(e.toString());
+            }finally {
+
+            if (stmt != null) stmt.close();
+            if (conn != null) {
+              try {
+                conn.rollback();
+              } catch(Exception ex) {}
+              try {
+                conn.close();
+              } catch(Exception ex) {}
+            }
+           }
+%>
+

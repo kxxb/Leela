@@ -1,0 +1,187 @@
+/*[{
+    text: 'To Do', 
+    cls: 'folder',
+    checked: false,
+    children: [{
+        text: 'Go jogging',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Take a nap',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Climb Everest',
+        leaf: true,
+        checked: false
+    }]
+},{
+    text: 'Grocery List',
+    cls: 'folder',
+    children: [{
+        text: 'Bananas',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Milk',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Cereal',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Energy foods',
+        cls: 'folder',
+        children: [{
+            text: 'Coffee',
+            leaf: true,
+            checked: false
+        },{
+            text: 'Red Bull',
+            leaf: true,
+            checked: false
+        }]
+    }]
+},{
+    text: 'Remodel Project', 
+    cls: 'folder',
+    children: [{
+        text: 'Finish the budget',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Call contractors',
+        leaf: true,
+        checked: false
+    },{
+        text: 'Choose design',
+        leaf: true,
+        checked: false
+    }]
+}]
+
+*/
+
+[{
+text:'Другое',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'договора оказания услуг 1',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'договора оказания услуг 2',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:' Поиск покупателя жилого помещения и машино-места',
+cls:'folder',
+checked: false,
+   children:[
+ {
+
+        text: 'Шаврак Кирилл(01.11.2010)',
+
+        leaf: true,
+
+        checked:true
+
+         }
+ ,{
+
+        text: 'Шаврак Кирилл(31.10.2010)',
+
+        leaf: true,
+
+        checked:false
+
+         }
+]}
+,{
+text:'Агентский договор',
+cls:'folder',
+checked: false,
+   children:[
+ {
+
+        text: 'Шаврак Кирилл(27.10.2010)',
+
+        leaf: true,
+
+        checked:true
+
+         }
+ ,{
+
+        text: 'Шаврак Кирилл(01.11.2010)',
+
+        leaf: true,
+
+        checked:false
+
+         }
+]}
+,{
+text:'агентский договор',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'агентский на комиссию',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Анализ договора аренды',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Анализ предварительного договора. Наш клиент-продавец помещения Щерба О.Н. ',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Аренда жилого дома',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'аренды',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Выяснить получена ли собственность на маш. места',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Гарантийка',
+cls:'folder',
+checked: false,
+   children:[
+]}
+,{
+text:'Гарантийное письмо',
+cls:'folder',
+checked: false,
+   children:[
+]}
+]
+
